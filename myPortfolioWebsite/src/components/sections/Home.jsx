@@ -1,5 +1,8 @@
 import React from "react";
 import RevealOnScroll from "../RevealOnScroll";
+import GithubLogo from "../../assets/githubLogo.png";
+import XLogo from "../../assets/xLogo.png";
+import InLogo from "../../assets/inLogo.png";
 
 function Home() {
   return (
@@ -36,6 +39,34 @@ function Home() {
           </div>
         </div>
       </RevealOnScroll>
+
+      <div className="hidden lg:flex">
+        <ul className="fixed right-10 bottom-10 flex flex-col gap-10 items-center lg:bottom-40 xl:bottom-10">
+          <li>
+            <a
+              href="https://github.com/va4unsingh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="w-7" src={GithubLogo} alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/va4unsingh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img className="w-6" src={XLogo} alt="X" />
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img className="w-7" src={InLogo} alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 }
