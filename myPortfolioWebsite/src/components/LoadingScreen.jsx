@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function LoadingScreen({ onComplete }) {
   const [text, setText] = useState("");
-  const fullText = "<Hello World/>";
+  const fullText = "<Deploying.../>";
 
   useEffect(() => {
     let index = 0;
@@ -17,7 +17,7 @@ function LoadingScreen({ onComplete }) {
       }
     }, 100);
     return () => clearInterval(interval);
-  },[onComplete]);
+  }, [onComplete]);
 
   return (
     <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
