@@ -8,33 +8,25 @@ import JsLogo from "../../assets/javascript.svg";
 import TsLogo from "../../assets/typescriptLogo.svg";
 import NodejsLogo from "../../assets/nodejs.svg";
 import ExpjsLogo from "../../assets/Express.svg";
+import MongoLogo from "../../assets/mongodb.svg";
+import PostgreLogo from "../../assets/postgresql.svg";
+import GitLogo from "../../assets/git.svg";
+import GithubLogo from "../../assets/githubLogo.png";
+import DockerLogo from "../../assets/docker.svg";
+import PostmanLogo from "../../assets/postman.svg";
+import graphQlLogo from "../../assets/GraphQl.svg";
+import RenderDev from "../../assets/render2dev.png";
+import NetlifyLogo from "../../assets/netlifyLogo.png";
+import VercelLogo from "../../assets/vercel.svg";
 
 function About() {
-  const frontendSkills = [
-    "HTML",
-    "CSS",
-    "TAILWINDCSS",
-    "JAVASCRIPT",
-    "TYPESCRIPT",
-    "REACT",
-    "NEXT.JS",
-  ];
-  const backendSkills = [
-    "NODE.JS",
-    "PYTHON",
-    "AWS",
-    "MONGODB",
-    "GRAPHQL",
-    "MYSQL",
-    "VERCEL",
-  ];
   return (
     <section
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
@@ -45,8 +37,8 @@ function About() {
               delivering effective solutions.
             </p>
 
-            {/* Lib and frameworks */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+              {/* Lib and frameworks */}
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">
                   Libraries and frameworks
@@ -55,6 +47,10 @@ function About() {
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
                     <img src={ReactLogo} alt="" />
                     <div>React</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={RenderDev} alt="" />
+                    <div>React Router</div>
                   </div>
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
                     <img className="w-8" src={NextLogo} alt="" />
@@ -71,17 +67,21 @@ function About() {
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Languages</h3>
                 <div className="flex flex-wrap gap-2">
-                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
                     <img className="w-8" src={JsLogo} alt="" />
                     <div>JavaScript</div>
                   </div>
-                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
                     <img className="w-8" src={TsLogo} alt="" />
                     <div>TypeScript</div>
                   </div>
-                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
                     <img className="w-8" src={PythonLogo} alt="" />
                     <div>Python</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={graphQlLogo} alt="" />
+                    <div>GraphQL</div>
                   </div>
                 </div>
               </div>
@@ -98,46 +98,65 @@ function About() {
                     <img className="w-8" src={ExpjsLogo} alt="" />
                     <div>Express.js</div>
                   </div>
-                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
-                    <img className="w-8" src={ExpjsLogo} alt="" />
-                    <div>Express.js</div>
-                  </div>
                 </div>
               </div>
 
-              {/*   */}
+              {/* Databases and ORMs  */}
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Backend</h3>
+                <h3 className="text-xl font-bold mb-4">Databases and ORMs </h3>
                 <div className="flex flex-wrap gap-2">
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
-                    <img className="w-8" src={NodejsLogo} alt="" />
-                    <div>Node.js</div>
+                    <img className="w-8" src={PostgreLogo} alt="" />
+                    <div>PostgreSQL</div>
                   </div>
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
-                    <img className="w-8" src={ExpjsLogo} alt="" />
-                    <div>Express.js</div>
-                  </div>
-                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
-                    <img className="w-8" src={ExpjsLogo} alt="" />
-                    <div>Express.js</div>
+                    <img className="w-8" src={MongoLogo} alt="" />
+                    <div>MongoDB</div>
                   </div>
                 </div>
               </div>
 
+              {/* Deployment */}
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Backend</h3>
+                <h3 className="text-xl font-bold mb-4">Deployment </h3>
                 <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => {
-                    return (
-                      <span
-                        key={key}
-                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-                      >
-                        {tech}
-                      </span>
-                    );
-                  })}
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={RenderDev} alt="" />
+                    <div>Render</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={NetlifyLogo} alt="" />
+                    <div>Netlify</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-2xl hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-7 flex" src={VercelLogo} alt="" />
+                    <div>Vercel</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tools and technologies  */}
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                <h3 className="text-xl font-bold mb-4">
+                  Tools and technologies
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={GitLogo} alt="" />
+                    <div>Git</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={GithubLogo} alt="" />
+                    <div>GitHub</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={DockerLogo} alt="" />
+                    <div>Docker</div>
+                  </div>
+                  <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
+                    <img className="w-8" src={PostmanLogo} alt="" />
+                    <div>Postman</div>
+                  </div>
                 </div>
               </div>
             </div>
