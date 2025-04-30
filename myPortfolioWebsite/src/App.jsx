@@ -10,6 +10,8 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import SocialLink from "./components/SocialLinks";
+import ProjectPreview from "./components/sections/ProjectPreview";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -29,6 +31,7 @@ function App() {
         )}
 
         <main className="mx-auto">
+          <ScrollToTop />
           <Routes>
             <Route path="*" element={<Home />} />
             <Route
@@ -37,6 +40,7 @@ function App() {
                 <>
                   <Home />
                   <About />
+                  <ProjectPreview />
                 </>
               }
             />

@@ -31,7 +31,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-[70vh] flex items-center justify-center py-20 xl:mt-30 "
     >
       <RevealOnScroll>
         <div className="px-4 w-[350px] xl:w-[900px] md:w-[600px] lg:w-[750px] sm:w-[500px] ">
