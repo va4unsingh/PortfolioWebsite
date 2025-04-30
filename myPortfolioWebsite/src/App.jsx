@@ -12,6 +12,7 @@ import Footer from "./components/sections/Footer";
 import SocialLink from "./components/SocialLinks";
 import ProjectPreview from "./components/sections/ProjectPreview";
 import ScrollToTop from "./components/ScrollToTop";
+import RealAbout from "./components/sections/RealAbout";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -44,7 +45,7 @@ function App() {
                 </>
               }
             />
-            {/* <Route path="/about" element={<About />} /> */}
+            <Route path="/about" element={<RealAbout />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

@@ -33,7 +33,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
           <div className="hidden md:flex items-center space-x-8">
             {/* Home  */}
             <NavLink
-              onClick={(e) => {
+              onClick={() => {
                 window.scrollTo(0, 0);
               }}
               to="/"
@@ -45,6 +45,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
 
             {/* About  */}
             <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
               to="/about"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
@@ -52,6 +55,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
             </NavLink>
             <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
               to="/projects"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
@@ -59,6 +65,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
             </NavLink>
             <NavLink
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
               to="/contact"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >

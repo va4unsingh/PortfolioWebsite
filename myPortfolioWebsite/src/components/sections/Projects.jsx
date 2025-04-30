@@ -1,5 +1,7 @@
 import React from "react";
 import RevealOnScroll from "../RevealOnScroll";
+import GithubLogo from "../../assets/githubLogo.png";
+import Sidearrow from "../../assets/sidearrow.svg";
 
 function Projects() {
   return (
@@ -12,12 +14,12 @@ function Projects() {
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Project Portfolio
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
             <div
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Weather App</h3>
+              <h3 className="text-xl font-bold mb-2">Comming Soon..</h3>
               <p className="text-gray-400 mb-4">
                 Made Weather app by fetching api
               </p>
@@ -34,12 +36,20 @@ function Projects() {
                   );
                 })}
               </div>
-              <div className="flex justify-center items-center mt-4">
+              <div className="flex justify-between items-center mt-4">
                 <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  View Project ➡️
+                  Source code <img className="w-5" src={GithubLogo} />
+                </a>
+                <a
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Live Preview <img className="w-4" src={Sidearrow} />
                 </a>
               </div>
             </div>
@@ -47,7 +57,7 @@ function Projects() {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Weather App</h3>
+              <h3 className="text-xl font-bold mb-2">Comming Soon..</h3>
               <p className="text-gray-400 mb-4">
                 Made Weather app by fetching api
               </p>
@@ -64,12 +74,20 @@ function Projects() {
                   );
                 })}
               </div>
-              <div className="flex justify-center items-center mt-4">
+              <div className="flex justify-between items-center mt-4">
                 <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  View Project ➡️
+                  Source code <img className="w-5" src={GithubLogo} />
+                </a>
+                <a
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Live Preview <img className="w-4" src={Sidearrow} />
                 </a>
               </div>
             </div>
@@ -77,7 +95,7 @@ function Projects() {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Weather App</h3>
+              <h3 className="text-xl font-bold mb-2">Comming Soon..</h3>
               <p className="text-gray-400 mb-4">
                 Made Weather app by fetching api
               </p>
@@ -94,12 +112,20 @@ function Projects() {
                   );
                 })}
               </div>
-              <div className="flex justify-center items-center mt-4">
+              <div className="flex justify-between items-center mt-4">
                 <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  View Project ➡️
+                  Source code <img className="w-5" src={GithubLogo} />
+                </a>
+                <a
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Live Preview <img className="w-4" src={Sidearrow} />
                 </a>
               </div>
             </div>
@@ -107,7 +133,7 @@ function Projects() {
               className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
             >
-              <h3 className="text-xl font-bold mb-2">Weather App</h3>
+              <h3 className="text-xl font-bold mb-2">Comming Soon..</h3>
               <p className="text-gray-400 mb-4">
                 Made Weather app by fetching api
               </p>
@@ -124,15 +150,26 @@ function Projects() {
                   );
                 })}
               </div>
-              <div className="flex justify-center items-center mt-4">
+              <div className="flex justify-between items-center mt-4">
                 <a
-                  href="#"
-                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
-                  View Project ➡️
+                  Source code <img className="w-5" src={GithubLogo} />
+                </a>
+                <a
+                  href="https://github.com/va4unsingh"
+                  target="_blank"
+                  className=" flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Live Preview <img className="w-4" src={Sidearrow} />
                 </a>
               </div>
             </div>
+          
+          
+          
           </div>
         </div>
       </RevealOnScroll>
