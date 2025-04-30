@@ -10,9 +10,15 @@ function Navbar({ menuOpen, setMenuOpen }) {
     <nav className="fixed top-0 w-full z-30 bg-black opacity-85 border-b border-white/10 shadow-lg">
       <div className="mx-auto px-5 sm:px-16 md:px-20 lg:px-32 xl:px-40">
         <div className="flex justify-between items-center h-20">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
+          <Link
+            onClick={(e) => {
+              window.scrollTo(0, 0);
+            }}
+            to="/"
+            className="font-mono text-xl font-bold text-white"
+          >
             V <span className="text-blue-500">.Singh</span>
-          </a>
+          </Link>
 
           <button
             className="text-white text-2xl md:hidden"
@@ -27,6 +33,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
           <div className="hidden md:flex items-center space-x-8">
             {/* Home  */}
             <NavLink
+              onClick={(e) => {
+                window.scrollTo(0, 0);
+              }}
               to="/"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >

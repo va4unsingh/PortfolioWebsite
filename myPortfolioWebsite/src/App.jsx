@@ -28,17 +28,25 @@ function App() {
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         )}
 
-        <SocialLink />
-
         <main className="mx-auto">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="*" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <About />
+                </>
+              }
+            />
+            {/* <Route path="/about" element={<About />} /> */}
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <Footer />
+          <SocialLink />
         </main>
+        <Footer />
       </div>
     </div>
   );
