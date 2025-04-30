@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar({ menuOpen, setMenuOpen }) {
   useEffect(() => {
@@ -24,38 +25,37 @@ function Navbar({ menuOpen, setMenuOpen }) {
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
-            
             {/* Home  */}
-            <a
-              href="#home"
+            <NavLink
+              to="/"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
               Home
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </a>
+            </NavLink>
 
             {/* About  */}
-            <a
-              href="#about"
+            <NavLink
+              to="/about"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
               About
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </a>
-            <a
-              href="#projects"
+            </NavLink>
+            <NavLink
+              to="/projects"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
               Projects
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </a>
-            <a
-              href="#contact"
+            </NavLink>
+            <NavLink
+              to="/contact"
               className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white"
             >
               Contact
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

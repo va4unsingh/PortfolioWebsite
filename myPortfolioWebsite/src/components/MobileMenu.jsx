@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function MobileMenu({ menuOpen, setMenuOpen }) {
   return (
@@ -16,34 +17,34 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
         &times;
       </button>
 
-      <a
-        href="#home"
+      <NavLink
+       to="/"
         onClick={() => setMenuOpen(false)}
         className="text-2xl font-semibold text-white my-4"
       >
         Home
-      </a>
-      <a
-        href="#about"
+      </NavLink>
+      <NavLink
+       to="/about"
         onClick={() => setMenuOpen(false)}
         className="text-2xl font-semibold text-white my-4"
       >
         About
-      </a>
-      <a
-        href="#projects"
+      </NavLink>
+      <NavLink
+       to="/projects"
         onClick={() => setMenuOpen(false)}
         className="text-2xl font-semibold text-white my-4"
       >
         Projects
-      </a>
-      <a
-        href="#contact"
+      </NavLink>
+      <NavLink
+       to="/contact"
         onClick={() => setMenuOpen(false)}
         className="text-2xl font-semibold text-white my-4"
       >
         Contact
-      </a>
+      </NavLink>
     </div>
   );
 }

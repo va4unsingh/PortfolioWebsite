@@ -1,14 +1,15 @@
 import { useState } from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
-import Home from "./components/sections/home";
+import Home from "./components/sections/Home";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
-import "./index.css";
+import SocialLink from "./components/SocialLinks";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,11 +27,16 @@ function App() {
         {menuOpen && (
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         )}
+
+        <SocialLink />
+
         <main className="mx-auto">
-          <Home />
-          <About />
-          <Projects />
-          <Contact />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
           <Footer />
         </main>
       </div>

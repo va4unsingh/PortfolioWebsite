@@ -162,44 +162,22 @@ function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl">🏫 Education</h3>
-              <ul className=" list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong>BCom Finance</strong> - IGNOU (2023-2026)
-                </li>
-                <li>
-                  Relavant course work: Data Structures, Web Development, Cloud
-                  Computing....
-                </li>
-              </ul>
-            </div>
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl">👜 Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
-                    Software Engineer at ABC Coprs (2020 - Present)
-                  </h4>
+                  <h4 className="font-semibold">Role:</h4>
                   <p>
-                    Developed and maintained mircoservices for cloud-based
-                    applications
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold">
-                    Intern at DEF Startups (2019)
-                  </h4>
-                  <p>
-                    Assisted in Building front-end components and integration
-                    REST APIS
+                    Currently, I do not have formal work experience in the
+                    industry. However, I have completed several personal
+                    projects and hands-on practice in full-stack development,
+                    which showcase my abilities and technical skills.
                   </p>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </RevealOnScroll>
     </section>
