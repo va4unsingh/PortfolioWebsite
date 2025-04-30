@@ -12,11 +12,15 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@heroui/button": "^2.2.19",
+    "@heroui/system": "^2.4.15",
+    "@heroui/theme": "^2.4.15",
     "@tailwindcss/vite": "^4.1.4",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.9.2",
     "gsap": "^3.12.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.3",
     "tailwindcss": "^4.1.4"
   },
