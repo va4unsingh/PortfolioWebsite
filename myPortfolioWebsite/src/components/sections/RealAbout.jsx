@@ -14,84 +14,81 @@ function RealAbout() {
   // Journey timeline data
   const journeyTimeline = [
     {
-      year: "2020",
-      title: "Started Coding Journey",
+      year: "2024 January",
+      title: "Started My Coding Journey",
       description:
-        "Took my first steps into web development through online resources and self-learning.",
+        "Began learning web development with HTML, CSS, and JavaScript through online courses and small personal projects.",
     },
     {
-      year: "2021",
-      title: "First Client Project",
+      year: "2024 June",
+      title: "First Freelance Project",
       description:
-        "Successfully delivered my first freelance project, a responsive website for a local business.",
+        "Completed my first freelance assignment: a responsive website for a local business, gaining hands-on client experience.",
     },
     {
-      year: "2022",
-      title: "Expanded Tech Stack",
+      year: "2024 November",
+      title: "Deepened Front-End Skills",
       description:
-        "Mastered React and started exploring full-stack development with Node.js and MongoDB.",
+        "Focused on React and Tailwind CSS, building a variety of personal projects to improve my UI development.",
     },
     {
-      year: "2023",
-      title: "Open Source Contributor",
+      year: "2025 March",
+      title: "Expanded to Full-Stack Development",
       description:
-        "Began contributing to open-source projects and building a stronger presence in the dev community.",
+        "Started learning backend technologies like Node.js and MongoDB, creating full-stack apps to round out my skill set.",
     },
     {
-      year: "Now",
-      title: "Seeking New Challenges",
+      year: "2025 April",
+      title: "Contributed to Open Source",
       description:
-        "Ready to take on more complex projects and continue growing as a developer.",
+        "Made contributions to open-source projects, collaborating with other developers and refining my teamwork approach.",
+    },
+    {
+      year: "2025 May",
+      title: "Seeking New Client Projects",
+      description:
+        "Looking for exciting opportunities to work with clients on web apps.",
     },
   ];
 
   // Projects I'm proud of
   const projects = [
     {
-      name: "Portfolio Website",
-      description:
-        "My personal portfolio showcasing my journey and projects, built with React and Tailwind CSS.",
-      tech: ["React", "Tailwind CSS", "JavaScript"],
-      color: "from-purple-500 to-indigo-600",
-    },
-    {
-      name: "Weather Dashboard",
+      name: "Comming Soon...",
       description:
         "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
       tech: ["React", "API Integration", "CSS"],
-      color: "from-blue-500 to-cyan-600",
+      color: "from-cyan-500 to-teal-600",
     },
     {
-      name: "Task Manager",
+      name: "Comming Soon...",
       description:
-        "A full-stack task management application with user authentication and real-time updates.",
-      tech: ["MERN Stack", "Socket.io", "JWT"],
-      color: "from-emerald-500 to-teal-600",
+        "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
+      tech: ["React", "API Integration", "CSS"],
+      color: "from-cyan-500 to-teal-600",
+    },
+    {
+      name: "Comming Soon...",
+      description:
+        "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
+      tech: ["React", "API Integration", "CSS"],
+      color: "from-cyan-500 to-teal-600",
     },
   ];
 
   // Personal interests
   const interests = [
     {
-      name: "Web Development",
-      icon: "👨‍💻",
-      desc: "Building beautiful, functional interfaces that solve real problems.",
+      name: "Full-Stack Web Development",
+      icon: "🎯",
+      desc: "Building scalable, user-focused applications with seamless front-end and back-end integration.",
     },
     {
       name: "Open Source",
       icon: "🌍",
-      desc: "Contributing to the community and learning from other developers.",
+      desc: "Collaborating on projects and contributing to codebases that drive growth in the developer community.",
     },
-    {
-      name: "UI/UX Design",
-      icon: "🎨",
-      desc: "Creating intuitive, engaging user experiences that delight people.",
-    },
-    {
-      name: "Reading Tech Blogs",
-      icon: "📚",
-      desc: "Staying updated with the latest trends and best practices.",
-    },
+
     {
       name: "Learning New Technologies",
       icon: "🚀",
@@ -100,7 +97,7 @@ function RealAbout() {
     {
       name: "Problem Solving",
       icon: "🧩",
-      desc: "Finding elegant solutions to complex technical challenges.",
+      desc: "Delivering efficient solutions to complex technical challenges.",
     },
   ];
 
@@ -138,10 +135,8 @@ function RealAbout() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-5xl font-bold mb-4 text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-              About Me
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8 rounded-full"></div>
+            <h2 className="text-5xl font-bold mb-4  text-blue-400">About Me</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-8 rounded-full"></div>
             <p className="text-xl max-w-2xl mx-auto text-gray-300 leading-relaxed">
               I create engaging digital experiences that live at the
               intersection of design and technology.
@@ -237,7 +232,7 @@ function RealAbout() {
               {/* Personal Bio */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white mb-3 flex items-center">
-                  <span className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center mr-2">
+                  <span className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mr-2">
                     <svg
                       className="w-4 h-4 text-white"
                       fill="none"
@@ -272,7 +267,7 @@ function RealAbout() {
                 {/* Personal Info with animated icons */}
                 <div className="space-y-4 mt-8">
                   <div className="flex items-center group">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <svg
                         className="w-5 h-5 text-white"
                         fill="none"
@@ -297,7 +292,10 @@ function RealAbout() {
                   </div>
 
                   <div className="flex items-center group">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div
+                      className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan
+                    -500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300"
+                    >
                       <svg
                         className="w-5 h-5 text-white"
                         fill="none"
@@ -328,7 +326,7 @@ function RealAbout() {
                   </div>
 
                   <div className="flex items-center group">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <svg
                         className="w-5 h-5 text-white"
                         fill="none"
@@ -360,7 +358,7 @@ function RealAbout() {
                     className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden"
                   >
                     {/* Button background */}
-                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:scale-105"></span>
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-cyan-600 transition-all duration-300 group-hover:scale-105"></span>
 
                     {/* Button shine effect */}
                     <span className="absolute top-0 left-0 w-20 h-full bg-white/20 skew-x-[-30deg] transition-all duration-500 transform translate-x-[-4rem] group-hover:translate-x-[18rem]"></span>
@@ -442,7 +440,7 @@ function RealAbout() {
                     animate={mounted ? "visible" : "hidden"}
                   >
                     <h3 className="text-xl font-bold text-white mb-6 flex items-center">
-                      <span className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center mr-2">
+                      <span className="w-8 h-8 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 flex items-center justify-center mr-2">
                         <svg
                           className="w-4 h-4 text-white"
                           fill="none"
@@ -464,7 +462,7 @@ function RealAbout() {
                     {/* Fixed alignment in timeline section */}
                     <div className="relative ml-4">
                       {/* Main timeline vertical line - Fixed position */}
-                      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-blue-300"></div>
+                      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-cyan-500 to-blue-300"></div>
 
                       {journeyTimeline.map((item, index) => (
                         <motion.div
@@ -500,7 +498,7 @@ function RealAbout() {
                       ))}
                     </div>
 
-                    <div className="mt-10 p-6 rounded-lg bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-800/30">
+                    <div className="mt-10 p-6 rounded-lg bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-blue-800/30">
                       <h4 className="text-lg font-bold text-white mb-3 flex items-center">
                         <span className="w-6 h-6 rounded-full bg-blue-500/30 flex items-center justify-center mr-2">
                           <svg
@@ -547,7 +545,7 @@ function RealAbout() {
                         <motion.div
                           key={index}
                           variants={itemVariants}
-                          className="p-5 rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 hover:from-blue-900/30 hover:to-purple-900/30 transition-colors duration-500 border border-gray-700 hover:border-blue-700"
+                          className="p-5 rounded-lg bg-gradient-to-br from-gray-800 to-gray-900 hover:from-blue-900/30 hover:to-cyan-900/30 transition-colors duration-500 border border-gray-700 hover:border-blue-700"
                         >
                           <div className="flex items-center mb-3">
                             <span className="text-3xl mr-3">
@@ -564,7 +562,7 @@ function RealAbout() {
                       ))}
                     </div>
 
-                    <div className="mt-10 p-6 rounded-lg bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-800/30">
+                    <div className="mt-10 p-6 rounded-lg bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border border-blue-800/30">
                       <h4 className="text-lg font-bold text-white mb-3">
                         A Bit More About Me
                       </h4>
@@ -574,10 +572,10 @@ function RealAbout() {
                         into a genuine passion for web development.
                       </p>
                       <p className="text-gray-300 leading-relaxed">
-                        I'm constantly expanding my knowledge through coding
+                        I am committed to continuous learning through coding
                         challenges, building personal projects, and contributing
-                        to the developer community. I believe in writing clean,
-                        efficient code and creating intuitive user experiences.
+                        to the developer community. I prioritize writing clean,
+                        efficient, and maintainable code.
                       </p>
                     </div>
                   </motion.div>
@@ -633,7 +631,7 @@ function RealAbout() {
                     <div className="mt-8 text-center">
                       <a
                         href="/projects"
-                        className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/25"
+                        className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-medium transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/25"
                       >
                         View All Projects
                         <svg
