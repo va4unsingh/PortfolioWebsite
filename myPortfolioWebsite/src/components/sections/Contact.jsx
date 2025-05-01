@@ -15,7 +15,8 @@ function Contact() {
   //logic
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    // setErrorMSg("Oops! Something went wrong.")
+    // setMessage("Message Sent!");
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -27,7 +28,7 @@ function Contact() {
         setMessage("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => setErrorMSg("Oops! Something went wrong. Please try again"));
+      .catch(() => setErrorMSg("Oops! Something went wrong."));
   };
 
   return (
@@ -94,8 +95,8 @@ function Contact() {
             >
               Send Message
             </button>
-            <div className="text-green-400 text-lg font-medium ">{message}</div>
-            <div className="text-red-500 text-lg font-medium ">{errorMsg}</div>
+            <div className="text-green-400 text-md font-medium ">{message}</div>
+            <div className="text-red-500 text-md font-medium ">{errorMsg}</div>
           </form>
         </div>
       </RevealOnScroll>
