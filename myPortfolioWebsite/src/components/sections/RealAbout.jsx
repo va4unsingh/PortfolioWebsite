@@ -249,11 +249,11 @@ function RealAbout() {
                 </h3>
 
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  I'm a self-taught frontend developer focused on building
+                  I'm a self-taught full stack developer focused on building
                   scalable, high-performance websites with seamless user
                   experiences. I streamline complex challenges into clean,
                   intuitive, and maintainable designs, delivering functional and
-                  efficient solutions for clients and employers.
+                  efficient solutions.
                 </p>
 
                 {/* Personal Info with animated icons */}
