@@ -26,7 +26,11 @@ function Navbar({ menuOpen, setMenuOpen }) {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
           >
-            {menuOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
+            {menuOpen ? (
+              <XMarkIcon className="w-6 h-6" />
+            ) : (
+              <Bars3Icon className="w-6 h-6" />
+            )}
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -64,7 +68,12 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <NavLink
               onClick={() => window.scrollTo(0, 0)}
               to="/contact"
-              className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white transform group-hover:-translate-y-1 transition-transform duration-300 group-hover:[box-shadow:0_4px_10px_rgba(59,130,246,0.3)]"
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
+                }  text-lg group relative font-medium duration-300 `
+              }
+              // className=""
             >
               Contact
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
