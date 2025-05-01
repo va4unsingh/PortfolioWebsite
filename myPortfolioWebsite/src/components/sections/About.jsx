@@ -18,6 +18,7 @@ import graphQlLogo from "../../assets/GraphQl.svg";
 import RenderDev from "../../assets/render2dev.png";
 import NetlifyLogo from "../../assets/netlifyLogo.png";
 import VercelLogo from "../../assets/vercel.svg";
+import RouterLogo from "../../assets/router.svg";
 
 function About() {
   return (
@@ -49,7 +50,7 @@ function About() {
                     <div>React</div>
                   </div>
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
-                    <img className="w-8" src={RenderDev} alt="" />
+                    <img className="w-8" src={RouterLogo} alt="" />
                     <div>React Router</div>
                   </div>
                   <div className="SkillItr flex items-center gap-2 bg-blue-500/10  text-blue-500 py-3 px-3 rounded-full  hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition ">
