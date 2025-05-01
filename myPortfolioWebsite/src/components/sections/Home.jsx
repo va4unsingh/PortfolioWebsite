@@ -26,8 +26,8 @@ function Home() {
             <div className="flex justify-center space-x-4">
               {/* Enhanced View Projects Button */}
               <div className="mt-8">
-                <Link
-                  to="/projects"
+                <a
+                  href="#projects"
                   className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]"
                 >
                   {/* Button background with gradient */}
@@ -57,7 +57,7 @@ function Home() {
                     </svg>
                     View Projects
                   </span>
-                </Link>
+                </a>
               </div>
 
               {/* Enhanced Contact Me Button with Transparent Theme */}
