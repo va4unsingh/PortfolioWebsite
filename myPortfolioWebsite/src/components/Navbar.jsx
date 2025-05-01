@@ -7,7 +7,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-30 bg-black opacity-85 border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-30 bg-black/60 opacity-85 border-b border-white/10 shadow-lg">
       <div className="mx-auto px-5 sm:px-16 md:px-20 lg:px-32 xl:px-40">
         <div className="flex justify-between items-center h-20">
           <Link

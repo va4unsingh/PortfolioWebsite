@@ -81,3 +81,35 @@ html::-webkit-scrollbar-track,
 body::-webkit-scrollbar-track {
   background-color: #1a1a1a; /* Track color */
 }
+
+
+@keyframes headingAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-heading {
+  animation: headingAnimation 0.8s ease-out forwards;
+}
+
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text-reveal {
+  animation: textReveal 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}

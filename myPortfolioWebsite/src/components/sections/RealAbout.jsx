@@ -122,10 +122,7 @@ function RealAbout() {
   };
 
   return (
-    <section
-      id="about"
-      className="py-20 bg-gradient-to-b from-black via-gray-900 to-black mt-20"
-    >
+    <section id="about" className="py-20  mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -252,16 +249,11 @@ function RealAbout() {
                 </h3>
 
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  I'm a self-taught frontend developer with a passion for
-                  creating beautiful, functional, and user-friendly websites. I
-                  enjoy turning complex problems into simple, beautiful, and
-                  intuitive designs.
-                </p>
-                <p className="text-gray-300 mb-6 leading-relaxed">
-                  When I'm not coding or pushing pixels, you'll find me
-                  exploring new technologies, contributing to open-source
-                  projects, or enhancing my skills through online courses and
-                  tutorials.
+                  I'm a self-taught frontend developer focused on building
+                  scalable, high-performance websites with seamless user
+                  experiences. I streamline complex challenges into clean,
+                  intuitive, and maintainable designs, delivering functional and
+                  efficient solutions for clients and employers.
                 </p>
 
                 {/* Personal Info with animated icons */}
@@ -345,25 +337,25 @@ function RealAbout() {
                     <div className="ml-4">
                       <p className="text-sm text-gray-400">Status</p>
                       <p className="text-gray-200 group-hover:text-blue-400 transition-colors duration-300">
-                        Available for new projects
+                        Open for new projects
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Download CV Button with animated effect */}
+                {/* Download CV Button with animated effect
                 <div className="mt-8">
                   <a
                     href="#download"
                     className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden"
                   >
-                    {/* Button background */}
+                    Button background
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-cyan-600 transition-all duration-300 group-hover:scale-105"></span>
 
-                    {/* Button shine effect */}
+                    Button shine effect
                     <span className="absolute top-0 left-0 w-20 h-full bg-white/20 skew-x-[-30deg] transition-all duration-500 transform translate-x-[-4rem] group-hover:translate-x-[18rem]"></span>
 
-                    {/* Button content */}
+                    Button content
                     <span className="relative flex items-center">
                       <svg
                         className="w-5 h-5 mr-2 group-hover:animate-bounce"
@@ -382,7 +374,7 @@ function RealAbout() {
                       Download CV
                     </span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>
