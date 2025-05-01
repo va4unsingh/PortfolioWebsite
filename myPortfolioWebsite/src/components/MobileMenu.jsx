@@ -18,30 +18,46 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
       </button>
 
       <NavLink
-       to="/"
+        to="/"
         onClick={() => setMenuOpen(false)}
-        className="text-2xl font-semibold text-white my-4"
+        className={({ isActive }) =>
+          `${
+            isActive ? "text-blue-600" : "text-white"
+          }  text-2xl font-semibold my-4 `
+        }
       >
         Home
       </NavLink>
       <NavLink
-       to="/about"
+        to="/about"
         onClick={() => setMenuOpen(false)}
-        className="text-2xl font-semibold text-white my-4"
+        className={({ isActive }) =>
+          `${
+            isActive ? "text-blue-600" : "text-white"
+          }  text-2xl font-semibold my-4 `
+        }
       >
         About
       </NavLink>
       <NavLink
-       to="/projects"
+        to="/projects"
         onClick={() => setMenuOpen(false)}
-        className="text-2xl font-semibold text-white my-4"
+        className={({ isActive }) =>
+          `${
+            isActive ? "text-blue-600" : "text-white"
+          }  text-2xl font-semibold my-4 `
+        }
       >
         Projects
       </NavLink>
       <NavLink
-       to="/contact"
+        to="/contact"
         onClick={() => setMenuOpen(false)}
-        className="text-2xl font-semibold text-white my-4"
+        className={({ isActive }) =>
+          `${
+            isActive ? "text-blue-600" : "text-white"
+          }  text-2xl font-semibold my-4 `
+        }
       >
         Contact
       </NavLink>
