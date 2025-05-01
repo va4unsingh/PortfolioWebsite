@@ -25,21 +25,21 @@ function Home() {
 
             <div className="flex justify-center space-x-4">
               {/* Enhanced View Projects Button */}
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <a
                   href="#projects"
                   className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]"
                 >
-                  {/* Button background with gradient */}
+                  Button background with gradient
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-cyan-600 transition-all duration-500 group-hover:scale-110"></span>
 
-                  {/* Ripple pulse effect */}
+                  Ripple pulse effect
                   <span className="absolute inset-0 w-full h-full bg-white/10 rounded-lg opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-300"></span>
 
-                  {/* Enhanced shine effect */}
+                  Enhanced shine effect
                   <span className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] transition-all duration-600 transform translate-x-[-6rem] group-hover:translate-x-[20rem]"></span>
 
-                  {/* Button content with icon */}
+                  Button content with icon
                   <span className="relative flex items-center z-10">
                     <svg
                       className="w-5 h-5 mr-2"
@@ -58,7 +58,7 @@ function Home() {
                     View Projects
                   </span>
                 </a>
-              </div>
+              </div> */}
 
               {/* Enhanced Contact Me Button with Transparent Theme */}
               <div className="mt-8">
