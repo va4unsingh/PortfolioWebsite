@@ -23,7 +23,7 @@ function RevealOnScroll({ children }) {
             ref.current.classList.add("visible");
           }
         },
-        { threshold: 0.2, rootMargin: "0px 0px -50px 0px" }
+        { threshold: 0.08, rootMargin: "0px 0px -50px 0px" }
       );
 
       observer.observe(ref.current);

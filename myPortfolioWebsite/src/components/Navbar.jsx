@@ -38,7 +38,11 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <NavLink
               onClick={() => window.scrollTo(0, 0)}
               to="/"
-              className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white transform group-hover:-translate-y-1 transition-transform duration-300 group-hover:[box-shadow:0_4px_10px_rgba(59,130,246,0.3)]"
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
+                }  text-lg group relative font-medium duration-300 `
+              }
             >
               Home
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
@@ -48,7 +52,11 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <NavLink
               onClick={() => window.scrollTo(0, 0)}
               to="/about"
-              className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white transform group-hover:-translate-y-1 transition-transform duration-300 group-hover:[box-shadow:0_4px_10px_rgba(59,130,246,0.3)]"
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
+                }  text-lg group relative font-medium duration-300 `
+              }
             >
               About
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
@@ -58,7 +66,11 @@ function Navbar({ menuOpen, setMenuOpen }) {
             <NavLink
               onClick={() => window.scrollTo(0, 0)}
               to="/projects"
-              className="text-lg group relative text-gray-300 font-medium transition-colors duration-300 hover:text-white transform group-hover:-translate-y-1 transition-transform duration-300 group-hover:[box-shadow:0_4px_10px_rgba(59,130,246,0.3)]"
+              className={({ isActive }) =>
+                `${
+                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
+                }  text-lg group relative font-medium duration-300 `
+              }
             >
               Projects
               <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
