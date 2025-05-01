@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@heroicons/react": "^2.2.0",
     "@heroui/button": "^2.2.19",
     "@heroui/system": "^2.4.15",
     "@heroui/theme": "^2.4.15",

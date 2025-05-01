@@ -170,9 +170,9 @@ function RealAbout() {
                     transition={{ delay: 0.2, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <h3 className="text-3xl font-bold text-white">V. Singh</h3>
-                    <p className="text-blue-400 font-medium text-lg">
-                      Frontend Developer
+                    <h3 className="text-3xl font-bold text-white">Varun Singh</h3>
+                    <p className="text-blue-400 font-medium text-sm">
+                      Full Stack Developer
                     </p>
 
                     {/* Social Links with hover effects */}
