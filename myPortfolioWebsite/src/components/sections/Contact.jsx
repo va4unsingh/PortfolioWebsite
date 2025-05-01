@@ -10,6 +10,8 @@ function Contact() {
   });
   //service id
 
+  const [message, setMessage] = useState("");
+  const [errorMsg, setErrorMSg] = useState("");
   //logic
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,10 +24,10 @@ function Contact() {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        alert("Message Sent!");
+        setMessage("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again"));
+      .catch(() => setErrorMSg("Oops! Something went wrong. Please try again"));
   };
 
   return (
@@ -68,6 +70,7 @@ function Contact() {
                 }
               />
             </div>
+
             <div className="relative">
               <textarea
                 id="message"
@@ -82,6 +85,7 @@ function Contact() {
                 }
               />
             </div>
+
             <button
               type="submit"
               className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden
@@ -90,6 +94,8 @@ function Contact() {
             >
               Send Message
             </button>
+            <div className="text-green-400 text-lg font-medium ">{message}</div>
+            <div className="text-red-500 text-lg font-medium ">{errorMsg}</div>
           </form>
         </div>
       </RevealOnScroll>
