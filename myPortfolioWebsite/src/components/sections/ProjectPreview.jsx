@@ -18,7 +18,7 @@ function ProjectPreview() {
         </div>
 
         {/* Main dish */}
-        <div className="xl:w-[900px] grid grid-cols-1 md:grid-cols-1 gap-6 mt-10 ">
+        <div className="xl:w-[900px] md:w-[750px] grid grid-cols-1 md:grid-cols-1 gap-6 mt-10 ">
           <div
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
