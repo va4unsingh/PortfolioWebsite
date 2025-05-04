@@ -8,33 +8,31 @@ function Home() {
     <div>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-start relative ml-6 mt-15 md:ml-25 md:mt-20"
+        className="min-h-screen flex items-center justify-start relative ml-3  mt-4 md:ml-25 md:mt-20"
       >
         <RevealOnScroll>
-          <div className="text-start z-10 px-2 md:px-4">
-            <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 bg-clip-text text-transparent animate-heading [text-shadow:0_2px_4px_rgba(0,0,0,0.3)] leading-tight md:leading-none">
+          <div className="text-start z-10 px-3 sm:px-6 md:px-8 max-w-screen-lg mx-auto">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 bg-clip-text text-transparent animate-heading [text-shadow:0_2px_4px_rgba(0,0,0,0.3)] md:leading-none">
               Varun Singh
             </h1>
 
-            <h2 className="text-lg md:text-3xl font-bold text-gray-200 mt-2 mb-4 md:mb-6">
+            <h2 className="ml-1 text-xl sm:text-lg md:text-3xl font-semibold text-gray-200 mt-3 mb-8 md:ml-3 md:mb-6 animate-heading">
               Full Stack Developer
             </h2>
 
-            <div className="max-w-full md:max-w-5xl font-semibold text-gray-300 text-base md:text-xl animate-text-reveal">
-              <p>
-                <span className="text-lg md:text-3xl font-bold text-cyan-500">
-                  Hi,{" "}
-                </span>
-                I'm{" "}
-                <span className="text-cyan-500 text-lg md:text-2xl">
-                  Varun Singh
-                </span>{" "}
-                — Full Stack Web Developer focused on building complete websites
-                from front-end to back-end logic. Dedicated to writing clean
-                code, delivering smooth user experiences, and building fast,
-                scalable applications.
-              </p>
-            </div>
+            <p className="ml-1 md:ml-3 text-lg sm:text-xl md:text-xl font-semibold text-gray-300 animate-heading max-w-3xl ">
+              <span className="text-xl  md:text-2xl font-bold text-cyan-500">
+                Hi,{" "}
+              </span>
+              I'm{" "}
+              <span className="text-cyan-500 text-xl md:text-2xl font-bold">
+                Varun Singh
+              </span>{" "}
+              — a Full Stack Web Developer focused on building complete websites
+              from front-end to back-end logic. Dedicated to writing clean code,
+              delivering smooth user experiences, and building fast, scalable
+              applications.
+            </p>
 
             <div className="flex justify-center space-x-4">
               {/* Enhanced View Projects Button */}
@@ -74,7 +72,7 @@ function Home() {
               </div> */}
 
               {/* Enhanced Contact Me Button with Transparent Theme */}
-              <div className="mt-8">
+              <div className="mt-8 animate-pulse">
                 <Link
                   to="/contact"
                   className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden border border-white/40 bg-transparent shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"

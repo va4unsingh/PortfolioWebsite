@@ -33,64 +33,72 @@ function Navbar({ menuOpen, setMenuOpen }) {
             )}
           </button>
 
-          <div className=" hidden md:flex items-center space-x-8">
-            {/* Home */}
-            <NavLink
-              onClick={() => window.scrollTo(0, 0)}
-              to="/"
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-xl group relative font-medium duration-300 `
-              }
-            >
-              Home
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </NavLink>
+          <div className="hidden md:flex items-center space-x-8">
+  {/* Home */}
+  <NavLink
+    onClick={() => window.scrollTo(0, 0)}
+    to="/"
+    className={({ isActive }) =>
+      `${
+        isActive
+          ? "text-blue-600"
+          : "text-gray-300 hover:text-white"
+      } text-xl group relative font-semibold transition-all duration-300 ease-out hover:text-blue-500`
+    }
+  >
+    Home
+    <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105 rounded-full"></span>
+  </NavLink>
 
-            {/* About */}
-            <NavLink
-              onClick={() => window.scrollTo(0, 0)}
-              to="/about"
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-xl group relative font-medium duration-300 `
-              }
-            >
-              About
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </NavLink>
+  {/* About */}
+  <NavLink
+    onClick={() => window.scrollTo(0, 0)}
+    to="/about"
+    className={({ isActive }) =>
+      `${
+        isActive
+          ? "text-blue-600"
+          : "text-gray-300 hover:text-white"
+      } text-xl group relative font-semibold transition-all duration-300 ease-out hover:text-blue-500`
+    }
+  >
+    About
+    <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105 rounded-full"></span>
+  </NavLink>
 
-            {/* Projects */}
-            <NavLink
-              onClick={() => window.scrollTo(0, 0)}
-              to="/projects"
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-xl group relative font-medium duration-300 `
-              }
-            >
-              Projects
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </NavLink>
+  {/* Projects */}
+  <NavLink
+    onClick={() => window.scrollTo(0, 0)}
+    to="/projects"
+    className={({ isActive }) =>
+      `${
+        isActive
+          ? "text-blue-600"
+          : "text-gray-300 hover:text-white"
+      } text-xl group relative font-semibold transition-all duration-300 ease-out hover:text-blue-500`
+    }
+  >
+    Projects
+    <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105 rounded-full"></span>
+  </NavLink>
 
-            {/* Contact */}
-            <NavLink
-              onClick={() => window.scrollTo(0, 0)}
-              to="/contact"
-              className={({ isActive }) =>
-                `${
-                  isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-xl group relative font-medium duration-300 `
-              }
-              // className=""
-            >
-              Contact
-              <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105"></span>
-            </NavLink>
-          </div>
+  {/* Contact */}
+  <NavLink
+    onClick={() => window.scrollTo(0, 0)}
+    to="/contact"
+    className={({ isActive }) =>
+      `${
+        isActive
+          ? "text-blue-600"
+          : "text-gray-300 hover:text-white"
+      } text-xl group relative font-semibold transition-all duration-300 ease-out hover:text-blue-500`
+    }
+  >
+    Contact
+    <span className="absolute left-0 -bottom-1 w-0 h-[3px] bg-blue-500 transition-all duration-300 ease-out group-hover:w-full group-hover:h-[4px] group-hover:scale-x-105 rounded-full"></span>
+  </NavLink>
+</div>
+
         </div>
       </div>
     </nav>

@@ -37,8 +37,8 @@ function Contact() {
       className="min-h-[70vh] flex items-center justify-center py-20 mt-25 xl:mt40 "
     >
       <RevealOnScroll>
-        <div className="px-4 w-[350px] xl:w-[900px] md:w-[600px] lg:w-[750px] sm:w-[500px] ">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <div className="px-4 w-[350px] xl:w-[900px] md:w-[600px] lg:w-[750px] sm:w-[500px] animate-heading">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center animate-heading">
             Get In Touch
           </h2>
           <form className="space-y-6" onSubmit={handleSubmit}>

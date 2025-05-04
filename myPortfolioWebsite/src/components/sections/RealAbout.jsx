@@ -14,35 +14,35 @@ function RealAbout() {
   // Journey timeline data
   const journeyTimeline = [
     {
-      year: "2024 January",
+      year: "2025 February",
       title: "Started My Coding Journey",
       description:
-        "Began learning web development with HTML, CSS, and JavaScript through online courses and small personal projects.",
+        "Began learning web development with HTML, CSS, and JavaScript through online resources and small personal projects.",
     },
+    // {
+    //   year: "2024 June",
+    //   title: "First Freelance Project",
+    //   description:
+    //     "Completed my first freelance assignment: a responsive website for a local business, gaining hands-on client experience.",
+    // },
+    // {
+    //   year: "2024 November",
+    //   title: "Deepened Front-End Skills",
+    //   description:
+    //     "Focused on React and Tailwind CSS, building a variety of personal projects to improve my UI development.",
+    // },
     {
-      year: "2024 June",
-      title: "First Freelance Project",
-      description:
-        "Completed my first freelance assignment: a responsive website for a local business, gaining hands-on client experience.",
-    },
-    {
-      year: "2024 November",
-      title: "Deepened Front-End Skills",
-      description:
-        "Focused on React and Tailwind CSS, building a variety of personal projects to improve my UI development.",
-    },
-    {
-      year: "2025 March",
+      year: "2025 April",
       title: "Expanded to Full-Stack Development",
       description:
         "Started learning backend technologies like Node.js and MongoDB, creating full-stack apps to round out my skill set.",
     },
-    {
-      year: "2025 April",
-      title: "Contributed to Open Source",
-      description:
-        "Made contributions to open-source projects, collaborating with other developers and refining my teamwork approach.",
-    },
+    // {
+    //   year: "2025 April",
+    //   title: "Contributed to Open Source",
+    //   description:
+    //     "Made contributions to open-source projects, collaborating with other developers and refining my teamwork approach.",
+    // },
     {
       year: "2025 May",
       title: "Seeking New Client Projects",
@@ -54,25 +54,25 @@ function RealAbout() {
   // Projects I'm proud of
   const projects = [
     {
-      name: "Comming Soon...",
+      name: "In Progress...",
       description:
-        "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
-      tech: ["React", "API Integration", "CSS"],
+        "A responsive eCommerce app that allows users to browse products, manage their cart, and complete secure purchases.",
+      tech: ["Next.js", "Node.js", "PostgreSQL", "GraphQL", "NextAuth"],
       color: "from-cyan-500 to-teal-600",
     },
     {
-      name: "Comming Soon...",
+      name: "Upcoming Project...",
       description:
-        "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
-      tech: ["React", "API Integration", "CSS"],
-      color: "from-cyan-500 to-teal-600",
+        "An advanced task management app designed to help users stay organized. It features to-do lists, deadlines, notifications, and seamless collaboration with team members.",
+      tech: ["React", "Node.js", "MongoDB", "Socket.io", "JWT Authentication"],
+      color: "from-purple-500 to-pink-600",
     },
     {
-      name: "Comming Soon...",
+      name: "Upcoming Project",
       description:
-        "A responsive weather app that displays current conditions and forecasts using OpenWeather API.",
-      tech: ["React", "API Integration", "CSS"],
-      color: "from-cyan-500 to-teal-600",
+        "A secure and intuitive admin panel for managing user data, content, and system settings. It features role-based access control, real-time data updates, and detailed analytics dashboards for efficient administration.",
+      tech: ["React", "Node.js", "MongoDB", "Redux", "JWT Authentication"],
+      color: "from-indigo-500 to-purple-600",
     },
   ];
 
@@ -170,7 +170,9 @@ function RealAbout() {
                     transition={{ delay: 0.2, duration: 0.5 }}
                     viewport={{ once: true }}
                   >
-                    <h3 className="text-3xl font-bold text-white">Varun Singh</h3>
+                    <h3 className="text-3xl font-bold text-white">
+                      Varun Singh
+                    </h3>
                     <p className="text-blue-400 font-medium text-sm">
                       Full Stack Developer
                     </p>
