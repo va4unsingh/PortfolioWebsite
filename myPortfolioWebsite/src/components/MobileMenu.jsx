@@ -8,7 +8,7 @@ function MobileMenu({ menuOpen, setMenuOpen }) {
          transition-all duration-300 ease-in-out`}
     >
       <button
-        className="absolute top-6 right-6 text-white text-3xl focus:outline-none cursor-pointer"
+        className="ml-10 mt-3 text-5xl absolute top-6 right-6 text-white focus:outline-none cursor-pointer"
         aria-label="Close Menu"
         onClick={() => {
           setMenuOpen(false);
