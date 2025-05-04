@@ -8,20 +8,33 @@ function Home() {
     <div>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative "
+        className="min-h-screen flex items-center justify-start relative ml-6 mt-15 md:ml-25 md:mt-20"
       >
         <RevealOnScroll>
-          <div className="text-center z-10 px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 bg-clip-text text-transparent leading-tight animate-heading [text-shadow:0_2px_4px_rgba(0,0,0,0.3)]">
-              Hi, I'm Varun Singh
+          <div className="text-start z-10 px-2 md:px-4">
+            <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-cyan-500 to-cyan-400 bg-clip-text text-transparent animate-heading [text-shadow:0_2px_4px_rgba(0,0,0,0.3)] leading-tight md:leading-none">
+              Varun Singh
             </h1>
 
-            <p className="text-gray-300 text-lg mb-8 max-w-lg mx-auto animate-text-reveal">
-              Full Stack Web Developer focused on building complete websites —
-              from front-end to back-end logic. Dedicated to writing clean code,
-              delivering smooth user experiences, and building fast, scalable
-              applications.
-            </p>
+            <h2 className="text-lg md:text-3xl font-bold text-gray-200 mt-2 mb-4 md:mb-6">
+              Full Stack Developer
+            </h2>
+
+            <div className="max-w-full md:max-w-5xl font-semibold text-gray-300 text-base md:text-xl animate-text-reveal">
+              <p>
+                <span className="text-lg md:text-3xl font-bold text-cyan-500">
+                  Hi,{" "}
+                </span>
+                I'm{" "}
+                <span className="text-cyan-500 text-lg md:text-2xl">
+                  Varun Singh
+                </span>{" "}
+                — Full Stack Web Developer focused on building complete websites
+                from front-end to back-end logic. Dedicated to writing clean
+                code, delivering smooth user experiences, and building fast,
+                scalable applications.
+              </p>
+            </div>
 
             <div className="flex justify-center space-x-4">
               {/* Enhanced View Projects Button */}

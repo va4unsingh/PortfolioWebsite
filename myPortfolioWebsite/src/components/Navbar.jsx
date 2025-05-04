@@ -8,15 +8,15 @@ function Navbar({ menuOpen, setMenuOpen }) {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-30 bg-black/30 backdrop-blur-md border-b border-white/10 shadow-[0_3px_10px_rgba(59,130,246,0.2)] animate-fadeIn">
+    <nav className="fixed top-5 w-full z-30">
       <div className="mx-auto px-5 sm:px-16 md:px-20 lg:px-32 xl:px-40">
         <div className="flex justify-between items-center h-20">
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="font-mono text-xl font-bold text-white transform hover:scale-105 transition duration-300"
+            className="font-mono text-3xl font-bold text-white transform hover:scale-105 transition duration-300"
           >
-            V <span className="text-blue-500">.Singh</span>
+            V <span className=" text-blue-500">.Singh</span>
           </Link>
 
           <button
@@ -33,7 +33,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
             )}
           </button>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className=" hidden md:flex items-center space-x-8">
             {/* Home */}
             <NavLink
               onClick={() => window.scrollTo(0, 0)}
@@ -41,7 +41,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-lg group relative font-medium duration-300 `
+                }  text-xl group relative font-medium duration-300 `
               }
             >
               Home
@@ -55,7 +55,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-lg group relative font-medium duration-300 `
+                }  text-xl group relative font-medium duration-300 `
               }
             >
               About
@@ -69,7 +69,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-lg group relative font-medium duration-300 `
+                }  text-xl group relative font-medium duration-300 `
               }
             >
               Projects
@@ -83,7 +83,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                }  text-lg group relative font-medium duration-300 `
+                }  text-xl group relative font-medium duration-300 `
               }
               // className=""
             >
