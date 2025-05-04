@@ -9,8 +9,8 @@ function Navbar({ menuOpen, setMenuOpen }) {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-4 w-full z-30">
-      <div className="mx-auto px-5 sm:px-16 md:px-20 lg:px-32 xl:px-30">
+    <nav className="fixed top-4 md:top-10 w-full z-30">
+      <div className="mx-auto pr-6 pl-1 sm:px-16 md:px-20 lg:px-25 xl:px-25">
         <div className="flex justify-between items-center h-20">
           {/* <Link
             onClick={() => window.scrollTo(0, 0)}
