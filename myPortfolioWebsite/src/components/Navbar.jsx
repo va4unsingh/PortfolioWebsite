@@ -9,7 +9,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-4 md:top-10 w-full z-30">
+    <nav className="fixed top-4 md:top-4 w-full z-30">
       <div className="mx-auto pr-6 pl-1  md:pl-3 md:pr-10 lg:px-25 xl:px-25 sm:pl-4 sm:pr-10">
         <div className="flex justify-between items-center h-20">
           {/* <Link
