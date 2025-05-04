@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../favicon/favicon.svg";
 
 function Navbar({ menuOpen, setMenuOpen }) {
   useEffect(() => {
@@ -11,7 +12,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
     <nav className="fixed top-4 w-full z-30">
       <div className="mx-auto px-5 sm:px-16 md:px-20 lg:px-32 xl:px-30">
         <div className="flex justify-between items-center h-20">
-          <Link
+          {/* <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
             className="font-mono text-2xl md:text-3xl font-bold text-white transform hover:scale-105 
@@ -19,6 +20,15 @@ function Navbar({ menuOpen, setMenuOpen }) {
              transition duration-300"
           >
             V<span className="text-blue-500">.Singh</span>
+          </Link> */}
+          <Link
+            onClick={() => window.scrollTo(0, 0)}
+            to="/"
+            className="font-mono text-2xl md:text-3xl font-bold text-white transform hover:scale-105 
+             drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] 
+             transition duration-300"
+          >
+            <img className="w-20 md:w-30" src={logo} alt="" />
           </Link>
 
           <button
