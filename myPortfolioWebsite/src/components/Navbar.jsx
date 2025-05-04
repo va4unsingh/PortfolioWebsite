@@ -10,7 +10,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
 
   return (
     <nav className="fixed top-4 md:top-10 w-full z-30">
-      <div className="mx-auto pr-6 pl-1 sm:px-16 md:pl-3 md:pr-10 lg:px-25 xl:px-25">
+      <div className="mx-auto pr-6 pl-1  md:pl-3 md:pr-10 lg:px-25 xl:px-25 sm:pl-4 sm:pr-10">
         <div className="flex justify-between items-center h-20">
           {/* <Link
             onClick={() => window.scrollTo(0, 0)}
@@ -28,7 +28,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
              drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] 
              transition duration-300"
           >
-            <img className="w-20 md:w-30" src={logo} alt="" />
+            <img className="w-20 sm:w-28 md:w-30" src={logo} alt="" />
           </Link>
 
           <button
