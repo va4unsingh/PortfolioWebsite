@@ -72,7 +72,7 @@ function Home() {
               </div> */}
 
               {/* Enhanced Contact Me Button with Transparent Theme */}
-              <div className="mt-8 animate-pulse">
+              <div className="mt-10 animate-pulse">
                 <Link
                   to="/contact"
                   className="group relative inline-flex items-center justify-center w-full px-6 py-3 rounded-lg text-white font-medium overflow-hidden border border-white/40 bg-transparent shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]"

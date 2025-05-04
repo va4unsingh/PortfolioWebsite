@@ -23,7 +23,7 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-4xl font-bold mb-5">In Progress..</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
@@ -53,7 +53,7 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-4xl font-bold mb-5">In Progress..</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
@@ -83,7 +83,7 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-4xl font-bold mb-5">In Progress..</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
@@ -113,7 +113,7 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-4xl font-bold mb-5">In Progress...</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress...</h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
