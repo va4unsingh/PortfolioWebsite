@@ -14,7 +14,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
           <Link
             onClick={() => window.scrollTo(0, 0)}
             to="/"
-            className="font-mono text-3xl font-bold text-white transform hover:scale-105 transition duration-300"
+            className="font-mono text-2xl md:text-3xl font-bold text-white transform hover:scale-105 transition duration-300"
           >
             V <span className=" text-blue-500">.Singh</span>
           </Link>
