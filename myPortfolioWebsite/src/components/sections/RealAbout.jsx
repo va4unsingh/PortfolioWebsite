@@ -122,7 +122,7 @@ function RealAbout() {
   };
 
   return (
-    <section id="about" className="py-20  mt-20">
+    <section id="about" className="py-20  mt-20 lg:mt-45 md:mt-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-16">

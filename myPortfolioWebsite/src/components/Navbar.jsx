@@ -10,7 +10,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
 
   return (
     <nav className="fixed top-4 md:top-10 w-full z-30">
-      <div className="mx-auto pr-6 pl-1 sm:px-16 md:px-20 lg:px-25 xl:px-25">
+      <div className="mx-auto pr-6 pl-1 sm:px-16 md:pl-3 md:pr-10 lg:px-25 xl:px-25">
         <div className="flex justify-between items-center h-20">
           {/* <Link
             onClick={() => window.scrollTo(0, 0)}
@@ -39,9 +39,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
             aria-controls="mobile-menu"
           >
             {menuOpen ? (
-              <XMarkIcon className="w-6 h-6" />
+              <XMarkIcon className="w-8 h-8" />
             ) : (
-              <Bars3Icon className="w-6 h-6" />
+              <Bars3Icon className="w-8 h-8" />
             )}
           </button>
 

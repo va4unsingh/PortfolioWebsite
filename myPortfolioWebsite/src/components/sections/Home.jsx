@@ -8,7 +8,7 @@ function Home() {
     <div>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-start relative ml-3  mt-4 md:ml-25 md:mt-20"
+        className="min-h-screen flex items-center justify-start relative ml-3  mt-4 lg:ml-25 md:mt-20"
       >
         <RevealOnScroll>
           <div className="text-start z-10 px-3 sm:px-6 md:px-8 max-w-screen-lg mx-auto">

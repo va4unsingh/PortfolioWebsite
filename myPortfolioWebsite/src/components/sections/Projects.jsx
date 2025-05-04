@@ -10,7 +10,7 @@ function Projects() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1, 
+        staggerChildren: 0.1,
         delayChildren: 0.1,
       },
     },
@@ -18,11 +18,11 @@ function Projects() {
 
   // Enhanced project variants with more dramatic entrance animation
   const projectVariants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: 50,
       scale: 0.9,
-      rotateX: 10 
+      rotateX: 10,
     },
     visible: {
       opacity: 1,
@@ -34,7 +34,7 @@ function Projects() {
         damping: 12,
         stiffness: 100,
         mass: 0.8,
-        duration: 0.5
+        duration: 0.5,
       },
     },
     hover: {
@@ -48,15 +48,15 @@ function Projects() {
   // Animate tech tags on initial load too
   const techVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { duration: 0.3 }
+      transition: { duration: 0.3 },
     },
-    hover: { 
-      scale: 1.05, 
-      boxShadow: "0 2px 8px rgba(59,130,246,0.3)" 
-    }
+    hover: {
+      scale: 1.05,
+      boxShadow: "0 2px 8px rgba(59,130,246,0.3)",
+    },
   };
 
   const titleVariants = {
@@ -104,7 +104,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20 mt-20"
+      className="min-h-screen flex items-center justify-center py-20 mt-20 lg:mt-0 xl:mt-20"
     >
       <div className="max-w-5xl mx-auto px-4">
         <RevealOnScroll>
@@ -132,7 +132,7 @@ function Projects() {
                 initial="hidden"
                 animate="visible"
               >
-                <motion.h3 
+                <motion.h3
                   className="text-xl font-bold mb-2"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -140,7 +140,7 @@ function Projects() {
                 >
                   {project.title}
                 </motion.h3>
-                <motion.p 
+                <motion.p
                   className="text-gray-400 mb-4"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -148,7 +148,7 @@ function Projects() {
                 >
                   {project.description}
                 </motion.p>
-                <motion.div 
+                <motion.div
                   className="flex flex-wrap gap-2 mb-4"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -168,7 +168,7 @@ function Projects() {
                     </motion.span>
                   ))}
                 </motion.div>
-                <motion.div 
+                <motion.div
                   className="flex justify-between items-center mt-4"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
