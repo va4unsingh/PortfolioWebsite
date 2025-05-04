@@ -6,13 +6,13 @@ import InLogo from "../../assets/inLogo.png";
 
 function Footer() {
   return (
-    <section className="text-white py-10 flex flex-col items-center space-y-6">
+    <section className="text-white  flex flex-col items-center mt-15 mb-5">
       {/* Top Section: Footer Text */}
       <div className="flex flex-col items-center gap-1">
         <div className="text-xl">Built with⚡by Varun Singh</div>
         <div className="text-xs text-gray-400 hidden lg:flex">
-              © 2025 All rights reserved.
-            </div>
+          © 2025 All rights reserved.
+        </div>
       </div>
       {/* Bottom Section: Logo and Socials */}
       <div className="flex lg:hidden mt-5">
@@ -39,11 +39,11 @@ function Footer() {
                 <img className="w-6" src={XLogo} alt="X" />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">
                 <img className="w-7" src={InLogo} alt="LinkedIn" />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
