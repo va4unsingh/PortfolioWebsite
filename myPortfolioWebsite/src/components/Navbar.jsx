@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "../../favicon/favicon.svg";
+import logo from "../../favicon/mainLogo.svg";
 
 function Navbar({ menuOpen, setMenuOpen }) {
   useEffect(() => {
