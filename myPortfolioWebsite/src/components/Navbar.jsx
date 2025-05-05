@@ -53,7 +53,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                } text-xl group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
+                } text-md group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
               }
             >
               Home
@@ -67,7 +67,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                } text-xl group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
+                } text-md group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
               }
             >
               About
@@ -81,7 +81,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                } text-xl group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
+                } text-md group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
               }
             >
               Projects
@@ -95,7 +95,7 @@ function Navbar({ menuOpen, setMenuOpen }) {
               className={({ isActive }) =>
                 `${
                   isActive ? "text-blue-600" : "text-gray-300 hover:text-white"
-                } text-xl group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
+                } text-md group relative font-medium transition-all duration-300 ease-out hover:text-blue-500`
               }
             >
               Contact

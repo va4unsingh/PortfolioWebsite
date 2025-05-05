@@ -71,21 +71,21 @@ function Projects() {
   // Sample project data to avoid repetition
   const projects = [
     {
-      title: "Weather App",
+      title: "Comming soon...",
       description: "Weather application with real-time data fetching from API",
       technologies: ["React", "Node.js", "AWS", "Docker"],
       githubLink: "https://github.com/va4unsingh",
       liveLink: "https://github.com/va4unsingh",
     },
     {
-      title: "Portfolio Website",
+      title: "Comming soon...",
       description: "Personal portfolio website with animated UI components",
       technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       githubLink: "https://github.com/va4unsingh",
       liveLink: "https://github.com/va4unsingh",
     },
     {
-      title: "Task Management App",
+      title: "Comming soon...",
       description:
         "Full-stack task management application with user authentication",
       technologies: ["React", "Express", "MongoDB", "JWT"],
@@ -93,7 +93,7 @@ function Projects() {
       liveLink: "https://github.com/va4unsingh",
     },
     {
-      title: "E-commerce Dashboard",
+      title: "Comming soon...",
       description: "Admin dashboard for managing products and orders",
       technologies: ["React", "Firebase", "Chart.js", "Material UI"],
       githubLink: "https://github.com/va4unsingh",
