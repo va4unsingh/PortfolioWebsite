@@ -68,20 +68,20 @@ function RealAbout() {
       ],
       color: "from-blue-500 to-indigo-600",
     },
-    {
-      name: "Upcoming Project...",
-      description:
-        "An advanced task management app designed to help users stay organized. It features to-do lists, deadlines, notifications, and seamless collaboration with team members.",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io", "JWT Authentication"],
-      color: "from-purple-500 to-pink-600",
-    },
-    {
-      name: "Upcoming Project",
-      description:
-        "A secure and intuitive admin panel for managing user data, content, and system settings. It features role-based access control, real-time data updates, and detailed analytics dashboards for efficient administration.",
-      tech: ["React", "Node.js", "MongoDB", "Redux", "JWT Authentication"],
-      color: "from-indigo-500 to-purple-600",
-    },
+    // {
+    //   name: "Upcoming Project...",
+    //   description:
+    //     "An advanced task management app designed to help users stay organized. It features to-do lists, deadlines, notifications, and seamless collaboration with team members.",
+    //   tech: ["React", "Node.js", "MongoDB", "Socket.io", "JWT Authentication"],
+    //   color: "from-purple-500 to-pink-600",
+    // },
+    // {
+    //   name: "Upcoming Project",
+    //   description:
+    //     "A secure and intuitive admin panel for managing user data, content, and system settings. It features role-based access control, real-time data updates, and detailed analytics dashboards for efficient administration.",
+    //   tech: ["React", "Node.js", "MongoDB", "Redux", "JWT Authentication"],
+    //   color: "from-indigo-500 to-purple-600",
+    // },
   ];
 
   // Personal interests

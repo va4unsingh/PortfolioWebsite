@@ -18,7 +18,7 @@ function ProjectPreview() {
         </div>
 
         {/* Main dish */}
-        <div className="xl:w-[900px] md:w-[750px] grid grid-cols-1 md:grid-cols-1 gap-6 mt-10 ">
+        <div className="xl:w-[900px] md:w-[750px] grid grid-cols-1 md:grid-cols-1 gap-6 mt-10 px-3 ">
           <Link to="/Projects">
             <div
               className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
