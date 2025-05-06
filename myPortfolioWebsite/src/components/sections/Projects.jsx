@@ -71,11 +71,19 @@ function Projects() {
   // Sample project data to avoid repetition
   const projects = [
     {
-      title: "Comming soon...",
-      description: "Weather application with real-time data fetching from API",
-      technologies: ["React", "Node.js", "AWS", "Docker"],
-      githubLink: "https://github.com/va4unsingh",
-      liveLink: "https://github.com/va4unsingh",
+      title: "Modern Real Estate Website",
+      description:
+        "A fully responsive real estate platform built with React and Tailwind CSS, featuring dynamic routing and modern UI design.",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Vite",
+        "React Router",
+        "Vercel",
+      ],
+      githubLink: "https://github.com/va4unsingh/Real-Estate-website",
+      liveLink: "https://real-estate-website-self-ten.vercel.app/",
     },
     {
       title: "Comming soon...",

@@ -19,11 +19,47 @@ function ProjectPreview() {
 
         {/* Main dish */}
         <div className="xl:w-[900px] md:w-[750px] grid grid-cols-1 md:grid-cols-1 gap-6 mt-10 ">
+          <Link to="/Projects">
+            <div
+              className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+           hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+            >
+              <h3 className="text-2xl md:text-3xl font-semibold mb-5">
+                Modern Real Estate Platform
+              </h3>
+              <p className="text-gray-400 mb-1">
+                A sleek and responsive real estate website built with React and
+                Tailwind CSS.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {[
+                  "React",
+                  "Tailwind CSS",
+                  "JavaScript",
+                  "Vite",
+                  "React Router",
+                  "Vercel",
+                ].map((tech, key) => {
+                  return (
+                    <span
+                      key={key}
+                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
+                    >
+                      {tech}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          </Link>
           <div
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">
+              In Progress..
+            </h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
@@ -53,7 +89,9 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">
+              In Progress..
+            </h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
@@ -83,37 +121,9 @@ function ProjectPreview() {
             className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
            hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
           >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress..</h3>
-            {/* <p className="text-gray-400 mb-1">
-              Made Weather app by fetching api
-            </p> */}
-            <div className="flex flex-wrap gap-2 mt-3">
-              {["React", "Node.js", "Next.js", "Docker"].map((tech, key) => {
-                return (
-                  <span
-                    key={key}
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all"
-                  >
-                    {tech}
-                  </span>
-                );
-              })}
-              {/* <div className="flex justify-end items-center mt-0">
-              <a
-                href="#"
-                className="text-blue-400 hover:text-blue-300 transition-colors my-1"
-              >
-                View Project ➡️
-              </a>
-            </div> */}
-            </div>
-          </div>
-          <div
-            className=" p-6 rounded-xl border border-white/10 hover:-translate-y-1 
-           hover:border-blue-500/30  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
-          >
-            <h3 className="text-2xl md:text-3xl font-semibold mb-5">In Progress...</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-5">
+              In Progress...
+            </h3>
             {/* <p className="text-gray-400 mb-1">
               Made Weather app by fetching api
             </p> */}
