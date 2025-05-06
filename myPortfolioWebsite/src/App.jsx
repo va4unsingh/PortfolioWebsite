@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import LoadingScreen from "./components/LoadingScreen";
+// import LoadingScreen from "./components/LoadingScreen";ccd
 import Navbar from "./components/Navbar";
 import MobileMenu from "./components/MobileMenu";
 import Home from "./components/sections/Home";
@@ -17,15 +17,16 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // also required
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="bg-gradient-to-br from-gray-900 to-black">
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      {/* {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />} */}
       <div
         className={`min-h-screen max-w-screen transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
+          // isLoaded ? "opacity-100" : "opacity-0"
+          ""
         } bg-gradient-to-br from-gray-900 to-black text-gray-100 overflow-x-hidden`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
