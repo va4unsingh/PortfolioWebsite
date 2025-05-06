@@ -2,6 +2,8 @@ import React from "react";
 import RevealOnScroll from "../RevealOnScroll";
 import GithubLogo from "../../assets/githubLogo.png";
 import Sidearrow from "../../assets/sidearrow.svg";
+import EstateReal from "../../assets/Estate.png";
+import Black from "../../assets/demoBlack.svg";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -80,33 +82,47 @@ function Projects() {
         "JavaScript",
         "Vite",
         "React Router",
+        "Framer Motion",
         "Vercel",
       ],
       githubLink: "https://github.com/va4unsingh/Real-Estate-website",
       liveLink: "https://real-estate-website-self-ten.vercel.app/",
-    },
-    {
-      title: "Comming soon...",
-      description: "Personal portfolio website with animated UI components",
-      technologies: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
-      githubLink: "https://github.com/va4unsingh",
-      liveLink: "https://github.com/va4unsingh",
+      image: EstateReal,
     },
     {
       title: "Comming soon...",
       description:
-        "Full-stack task management application with user authentication",
-      technologies: ["React", "Express", "MongoDB", "JWT"],
-      githubLink: "https://github.com/va4unsingh",
-      liveLink: "https://github.com/va4unsingh",
+        "A sleek e-commerce site with product listings, cart, and checkout—built using React and Tailwind, fully responsive and optimized for smooth user experience.",
+      technologies: [
+        "Next.js",
+        "NextAuth",
+        "Redux",
+        "Framer Motion",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vercel",
+        "Razorpay",
+      ],
+
+      githubLink: "/Projects",
+      liveLink: "/Projects",
+      image: Black, // import this at the top
     },
-    {
-      title: "Comming soon...",
-      description: "Admin dashboard for managing products and orders",
-      technologies: ["React", "Firebase", "Chart.js", "Material UI"],
-      githubLink: "https://github.com/va4unsingh",
-      liveLink: "https://github.com/va4unsingh",
-    },
+    // {
+    //   title: "Comming soon...",
+    //   description:
+    //     "Full-stack task management application with user authentication",
+    //   technologies: ["React", "Express", "MongoDB", "JWT"],
+    //   githubLink: "https://github.com/va4unsingh",
+    //   liveLink: "https://github.com/va4unsingh",
+    // },
+    // {
+    //   title: "Comming soon...",
+    //   description: "Admin dashboard for managing products and orders",
+    //   technologies: ["React", "Firebase", "Chart.js", "Material UI"],
+    //   githubLink: "https://github.com/va4unsingh",
+    //   liveLink: "https://github.com/va4unsingh",
+    // },
   ];
 
   return (
@@ -126,7 +142,7 @@ function Projects() {
           </motion.h2>
 
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10"
+            className=" grid grid-cols-1 md:grid-cols-2 gap-6 mt-10"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -134,73 +150,85 @@ function Projects() {
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="p-6 rounded-xl border border-white/10 transition-all backdrop-blur-sm"
+                className="flex flex-col  rounded-xl border border-white/10 transition-all backdrop-blur-sm "
                 variants={projectVariants}
                 whileHover="hover"
                 initial="hidden"
                 animate="visible"
               >
-                <motion.h3
-                  className="text-xl font-bold mb-2"
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
+                <div
+                  className="relative w-full"
+                  style={{ paddingTop: `${100 / 2.14}%` }}
                 >
-                  {project.title}
-                </motion.h3>
-                <motion.p
-                  className="text-gray-400 mb-4"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-                >
-                  {project.description}
-                </motion.p>
-                <motion.div
-                  className="flex flex-wrap gap-2 mb-4"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3 + index * 0.1, duration: 0.4 }}
-                >
-                  {project.technologies.map((tech, key) => (
-                    <motion.span
-                      key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition-all"
-                      variants={techVariants}
-                      initial="hidden"
-                      animate="visible"
-                      whileHover="hover"
-                      transition={{ delay: 0.4 + key * 0.05 + index * 0.1 }}
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover rounded-t-xl"
+                  />
+                </div>
+                <div className="px-6 py-2 flex flex-col flex-grow">
+                  <motion.h3
+                    className="text-xl font-bold mb-2"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
+                  >
+                    {project.title}
+                  </motion.h3>
+                  <motion.p
+                    className="text-gray-400 mb-4"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
+                  >
+                    {project.description}
+                  </motion.p>
+                  <motion.div
+                    className="flex flex-wrap gap-2 mb-4"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3 + index * 0.1, duration: 0.4 }}
+                  >
+                    {project.technologies.map((tech, key) => (
+                      <motion.span
+                        key={key}
+                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 transition-all"
+                        variants={techVariants}
+                        initial="hidden"
+                        animate="visible"
+                        whileHover="hover"
+                        transition={{ delay: 0.4 + key * 0.05 + index * 0.1 }}
+                      >
+                        {tech}
+                      </motion.span>
+                    ))}
+                  </motion.div>
+                  <motion.div
+                    className="flex justify-between items-center mt-auto pt-4"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 + index * 0.1, duration: 0.4 }}
+                  >
+                    <motion.a
+                      href={project.githubLink}
+                      target="_blank"
+                      className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-2"
+                      whileHover={{ scale: 1.05, x: 3 }}
                     >
-                      {tech}
-                    </motion.span>
-                  ))}
-                </motion.div>
-                <motion.div
-                  className="flex justify-between items-center mt-4"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 + index * 0.1, duration: 0.4 }}
-                >
-                  <motion.a
-                    href={project.githubLink}
-                    target="_blank"
-                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
-                    whileHover={{ scale: 1.05, x: 3 }}
-                  >
-                    Source code{" "}
-                    <img className="w-5" src={GithubLogo} alt="GitHub" />
-                  </motion.a>
-                  <motion.a
-                    href={project.liveLink}
-                    target="_blank"
-                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-4"
-                    whileHover={{ scale: 1.05, x: 3 }}
-                  >
-                    Live Preview{" "}
-                    <img className="w-4" src={Sidearrow} alt="Arrow" />
-                  </motion.a>
-                </motion.div>
+                      Source code{" "}
+                      <img className="w-5" src={GithubLogo} alt="GitHub" />
+                    </motion.a>
+                    <motion.a
+                      href={project.liveLink}
+                      target="_blank"
+                      className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors my-2"
+                      whileHover={{ scale: 1.05, x: 3 }}
+                    >
+                      Live Preview{" "}
+                      <img className="w-4" src={Sidearrow} alt="Arrow" />
+                    </motion.a>
+                  </motion.div>
+                </div>
               </motion.div>
             ))}
           </motion.div>
