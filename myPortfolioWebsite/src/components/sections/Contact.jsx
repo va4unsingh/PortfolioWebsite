@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import RevealOnScroll from "../RevealOnScroll";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,9 @@ function Contact() {
   });
   //service id
 
+  const [submitting, setSubmitting] = useState(false);
+  const [cooldown, setCooldown] = useState(false);
+
   const [message, setMessage] = useState("");
   const [errorMsg, setErrorMSg] = useState("");
   //logic
@@ -17,6 +21,8 @@ function Contact() {
     e.preventDefault();
     // setErrorMSg("Oops! Something went wrong.")
     // setMessage("Message Sent!");
+    if (submitting || cooldown) return;
+    setSubmitting(true); // disable the button
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -25,10 +31,16 @@ function Contact() {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        setMessage("Message Sent!");
+        // setMessage("Message Sent!");
+        toast.success("Form Submitted Successfully");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => setErrorMSg("Oops! Something went wrong."));
+      .catch(() => toast.error("Oops! Something went wrong."))
+      .finally(() => {
+        setSubmitting(false);
+        setCooldown(true); // Start cooldown after sending completes
+        setTimeout(() => setCooldown(false), 10000); // Re-enable after 10 seconds
+      });
   };
 
   return (
@@ -93,7 +105,7 @@ function Contact() {
               hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,256,0.4)]
               "
             >
-              Send Message
+              {submitting ? "Sending..." : "Send Message"}
             </button>
             <div className="text-green-400 text-md font-medium ">{message}</div>
             <div className="text-red-500 text-md font-medium ">{errorMsg}</div>

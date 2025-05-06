@@ -13,6 +13,8 @@ import SocialLink from "./components/SocialLinks";
 import ProjectPreview from "./components/sections/ProjectPreview";
 import ScrollToTop from "./components/ScrollToTop";
 import RealAbout from "./components/sections/RealAbout";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // also required
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -33,6 +35,18 @@ function App() {
 
         <main className="mx-auto">
           <ScrollToTop />
+          <ToastContainer
+            position="bottom-left"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover={false}
+            theme="dark"
+          />
           <Routes>
             <Route path="*" element={<Home />} />
             <Route
@@ -51,6 +65,7 @@ function App() {
           </Routes>
           <SocialLink />
         </main>
+
         <Footer />
       </div>
     </div>
