@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import ProfilePic from "../../assets/anime.jpg";
+import { Link } from "react-router-dom";
 
 function RealAbout() {
   const [activeTab, setActiveTab] = useState("journey");
@@ -54,11 +55,18 @@ function RealAbout() {
   // Projects I'm proud of
   const projects = [
     {
-      name: "In Progress...",
+      name: "Modern Real Estate Website",
       description:
-        "A responsive eCommerce app that allows users to browse products, manage their cart, and complete secure purchases.",
-      tech: ["Next.js", "Node.js", "PostgreSQL", "GraphQL", "NextAuth"],
-      color: "from-cyan-500 to-teal-600",
+        "A responsive real estate platform built with React and Tailwind CSS. It features property listings, user authentication, and seamless navigation using React Router and Vercel integration.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "Vite",
+        "React Router",
+        "Vercel",
+      ],
+      color: "from-blue-500 to-indigo-600",
     },
     {
       name: "Upcoming Project...",
@@ -586,42 +594,43 @@ function RealAbout() {
                       Featured Projects
                     </h3>
 
-                    <div className="space-y-6">
-                      {projects.map((project, index) => (
-                        <motion.div
-                          key={index}
-                          variants={itemVariants}
-                          className="overflow-hidden group rounded-lg border border-gray-700 transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10"
-                        >
-                          <div className="p-6 relative">
-                            {/* Background gradient */}
-                            <div className="absolute inset-0 bg-gradient-to-r opacity-20 group-hover:opacity-30 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
+                    <Link to="/Projects">
+                      <div className="space-y-6">
+                        {projects.map((project, index) => (
+                          <motion.div
+                            key={index}
+                            variants={itemVariants}
+                            className="overflow-hidden group rounded-lg border border-gray-700 transition-all duration-300 hover:border-blue-500/50 hover:shadow-lg hover:shadow-blue-500/10"
+                          >
+                            <div className="p-6 relative">
+                              {/* Background gradient */}
+                              <div className="absolute inset-0 bg-gradient-to-r opacity-20 group-hover:opacity-30 transition-opacity duration-300 rounded-lg pointer-events-none"></div>
 
-                            <h4 className="text-lg font-bold text-white mb-2 relative z-10">
-                              {project.name}
-                            </h4>
-                            <p className="text-gray-300 mb-4 relative z-10">
-                              {project.description}
-                            </p>
-                            <div className="flex flex-wrap gap-2 relative z-10">
-                              {project.tech.map((tech, techIndex) => (
-                                <span
-                                  key={techIndex}
-                                  className="px-3 py-1 rounded-full text-xs font-medium bg-blue-900/40 text-blue-300 border border-blue-800/40"
-                                >
-                                  {tech}
-                                </span>
-                              ))}
+                              <h4 className="text-lg font-bold text-white mb-2 relative z-10">
+                                {project.name}
+                              </h4>
+                              <p className="text-gray-300 mb-4 relative z-10">
+                                {project.description}
+                              </p>
+                              <div className="flex flex-wrap gap-2 relative z-10">
+                                {project.tech.map((tech, techIndex) => (
+                                  <span
+                                    key={techIndex}
+                                    className="px-3 py-1 rounded-full text-xs font-medium bg-blue-900/40 text-blue-300 border border-blue-800/40"
+                                  >
+                                    {tech}
+                                  </span>
+                                ))}
+                              </div>
                             </div>
-                          </div>
-                          {/* Gradient bar at bottom */}
-                          <div
-                            className={`h-1 w-full bg-gradient-to-r ${project.color}`}
-                          ></div>
-                        </motion.div>
-                      ))}
-                    </div>
-
+                            {/* Gradient bar at bottom */}
+                            <div
+                              className={`h-1 w-full bg-gradient-to-r ${project.color}`}
+                            ></div>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </Link>
                     <div className="mt-8 text-center">
                       <a
                         href="/projects"
