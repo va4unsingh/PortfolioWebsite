@@ -55,16 +55,15 @@ function RealAbout() {
   // Projects I'm proud of
   const projects = [
     {
-      name: "Modern Real Estate Website",
+      name: "Restaurant Website – Saveur",
       description:
-        "A responsive real estate platform built with React and Tailwind CSS. It features property listings, user authentication, and seamless navigation using React Router and Vercel integration.",
+        "Showcases a refined multi-page restaurant experience using React and Tailwind CSS, complete with dark mode, animated transitions, and responsive design.",
       tech: [
         "React",
         "Tailwind CSS",
-        "JavaScript",
-        "Vite",
+        "TypeScript",
         "React Router",
-        "Vercel",
+        "Framer Motion",
       ],
       color: "from-blue-500 to-indigo-600",
     },

@@ -4,6 +4,7 @@ import GithubLogo from "../../assets/githubLogo.png";
 import Sidearrow from "../../assets/sidearrow.svg";
 import EstateReal from "../../assets/Estate.png";
 import Black from "../../assets/demoBlack.svg";
+import Saveur from "../../assets/Saveur.png";
 import { motion } from "framer-motion";
 
 function Projects() {
@@ -73,41 +74,40 @@ function Projects() {
   // Sample project data to avoid repetition
   const projects = [
     {
-      title: "Modern Real Estate Website",
+      title: "Restaurant Website – Saveur",
       description:
-        "A fully responsive real estate platform built with React and Tailwind CSS, featuring dynamic routing and modern UI design.",
+        "Showcases a refined multi-page restaurant experience using React and Tailwind CSS, complete with dark mode, animated transitions, and responsive design.",
       technologies: [
         "React",
         "Tailwind CSS",
-        "JavaScript",
+        "TypeScript",
         "Vite",
         "React Router",
         "Framer Motion",
-        "Vercel",
-      ],
-      githubLink: "https://github.com/va4unsingh/Real-Estate-website",
-      liveLink: "https://real-estate-website-self-ten.vercel.app/",
-      image: EstateReal,
-    },
-    {
-      title: "Comming soon...",
-      description:
-        "A sleek e-commerce site with product listings, cart, and checkout—built using React and Tailwind, fully responsive and optimized for smooth user experience.",
-      technologies: [
-        "Next.js",
-        "NextAuth",
-        "Redux",
-        "Framer Motion",
-        "TypeScript",
-        "Tailwind CSS",
-        "Vercel",
-        "Razorpay",
       ],
 
-      githubLink: "/Projects",
-      liveLink: "/Projects",
-      image: Black, // import this at the top
+      githubLink: "https://github.com/va4unsingh/Restro-Project",
+      liveLink: "https://restro-project-two.vercel.app/",
+      image: Saveur, // import this at the top
     },
+    // {
+    //   title: "Modern Real Estate Website",
+    //   description:
+    //     "A fully responsive real estate platform built with React and Tailwind CSS, featuring dynamic routing and modern UI design.",
+    //   technologies: [
+    //     "React",
+    //     "Tailwind CSS",
+    //     "JavaScript",
+    //     "Vite",
+    //     "React Router",
+    //     "Framer Motion",
+    //     "Vercel",
+    //   ],
+    //   githubLink: "https://github.com/va4unsingh/Real-Estate-website",
+    //   liveLink: "https://real-estate-website-self-ten.vercel.app/",
+    //   image: EstateReal,
+    // },
+
     // {
     //   title: "Comming soon...",
     //   description:
